@@ -58,10 +58,7 @@ $ rm yarn.lock && rm -rf node_modules && npm i
 
 [この手順の差分](https://github.com/ryunosukemaeda0922/birman/pull/3)
 
-JavaScript のための静的検証ツールを追加
-
-参考
-[ESLint 最初の一歩](https://qiita.com/mysticatea/items/f523dab04a25f617c87d)
+JavaScript のための静的検証ツールを追加(参考[ESLint 最初の一歩](https://qiita.com/mysticatea/items/f523dab04a25f617c87d))
 
 ```
 $ npm install --save-dev eslint@5.16.0
@@ -108,10 +105,7 @@ VSCode上でエラーメッセージを表示してくれます
 
 [この手順の差分](https://github.com/ryunosukemaeda0922/birman/pull/4)
 
-コードフォーマッタ
-
-参考
-[ESLint 最初の一歩](https://qiita.com/mysticatea/items/f523dab04a25f617c87d)
+コードフォーマッタ(参考[ESLint 最初の一歩](https://qiita.com/mysticatea/items/f523dab04a25f617c87d))
 
 ```
 $ npm i --save-dev  prettier-eslint prettier-eslint-cli eslint-plugin-jest
