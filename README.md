@@ -19,7 +19,7 @@
 
 ## プロジェク構築
 
-[この手順の差分](https://github.com/ryunosukemaeda0922/birman/pull/1)
+[この手順の差分](https://github.com/ryunosukemaeda0922/birman/pull/6)
 
 ### プロジェクトの作成
 
@@ -45,7 +45,7 @@ welcomeページが立ち上がる
 
 ### パッケージマネージャをnpmにする
 
-[この手順の差分](https://github.com/ryunosukemaeda0922/birman/pull/2)
+[この手順の差分](https://github.com/ryunosukemaeda0922/birman/pull/7)
 
 yarnのままでも問題はない、個人的な好み
 
@@ -59,7 +59,7 @@ $ rm yarn.lock && rm -rf node_modules && npm i
 
 ### ESLint
 
-[この手順の差分](https://github.com/ryunosukemaeda0922/birman/pull/3)
+[この手順の差分](https://github.com/ryunosukemaeda0922/birman/pull/8)
 
 JavaScript のための静的検証ツールを追加(参考[ESLint 最初の一歩](https://qiita.com/mysticatea/items/f523dab04a25f617c87d))
 
@@ -108,7 +108,7 @@ VSCode上でエラーメッセージを表示してくれます
 
 ### Prettier
 
-[この手順の差分](https://github.com/ryunosukemaeda0922/birman/pull/4)
+[この手順の差分](https://github.com/ryunosukemaeda0922/birman/pull/9)
 
 コードフォーマッタ(参考[ESLint 最初の一歩](https://qiita.com/mysticatea/items/f523dab04a25f617c87d))
 
@@ -124,7 +124,7 @@ VSCodeの設定で`Format On Save`をにチェックをすると、ファイル�
 
 ### Flow
 
-[この手順の差分](https://github.com/ryunosukemaeda0922/birman/pull/5)
+[この手順の差分](https://github.com/ryunosukemaeda0922/birman/pull/10)
 
 JavaScriptの形チェックを行える(参考[@babel/preset-flow](https://babeljs.io/docs/en/babel-preset-flow))
 
@@ -151,7 +151,7 @@ node_modulesをflow対象外にする
 
 #### scriptsに追記
 
-[この手順の差分](https://github.com/ryunosukemaeda0922/birman/pull/5)
+[この手順の差分](https://github.com/ryunosukemaeda0922/birman/pull/11)
 
 package.jsonのscriptsに`lint`、`prettier`、`flow`、`flow-stop"`、追記
 
@@ -165,4 +165,3 @@ package.jsonのscriptsに`lint`、`prettier`、`flow`、`flow-stop"`、追記
 "flow-stop": "flow stop"
 },
 ```
-
