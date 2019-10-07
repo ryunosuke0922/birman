@@ -3,10 +3,12 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "android": "react-native run-android",
-    "ios": "react-native run-ios",
     "start": "react-native start",
-    "test": "jest"
+    "test": "jest",
+    "lint": "eslint ./src",
+    "prettier": "eslint ./src --fix",
+    "flow": "flow",
+    "flow-stop": "flow stop"
   },
   "dependencies": {
     "react": "16.9.0",
