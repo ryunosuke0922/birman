@@ -6,9 +6,11 @@
 
 - Mac
 
-- vscode
+- Visual Studio Code (VSCode)
 
-- react-native 0.61.2
+- ReactNative 0.61.2
+
+- JavaScript
 
 ## 前準備
 
@@ -54,7 +56,6 @@ yarnのままでも問題はない、個人的な好み
 $ rm yarn.lock && rm -rf node_modules && npm i
 ```
 
-
 ### ESLint
 
 JavaScript のための静的検証ツールを追加
@@ -63,6 +64,42 @@ JavaScript のための静的検証ツールを追加
 [ESLint 最初の一歩](https://qiita.com/mysticatea/items/f523dab04a25f617c87d)
 
 ```
-$ npm install --save-dev eslint
+$ npm install --save-dev eslint@5.16.0
 $ ./node_modules/.bin/eslint --init
 ```
+
+色々質問されるのでが、下記の設定で
+
+```
+? How would you like to use ESLint? 
+❯ To check syntax, find problems, and enforce code style
+
+? What type of modules does your project use? (Use arrow keys)
+❯ JavaScript modules (import/export) 
+
+? Which framework does your project use? (Use arrow keys)
+❯ React 
+
+? Where does your code run? (Press <space> to select, <a> to toggle all, <i> to 
+invert selection)
+❯ Node
+
+? How would you like to define a style for your project? (Use arrow keys)
+❯ Use a popular style guide 
+
+? Which style guide do you want to follow? (Use arrow keys)
+❯ Airbnb (https://github.com/airbnb/javascript) 
+
+? What format do you want your config file to be in? (Use arrow keys)
+❯ JSON 
+
+? Do you want to downgrade? (y/N)
+❯ y
+
+? Would you like to install them now with npm? (Y/n) 
+❯ y
+```
+
+VSCodeに[ESlint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)を追加
+
+VSCode上でエラーメッセージを表示してくれます
