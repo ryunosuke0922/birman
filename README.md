@@ -23,31 +23,34 @@
 
 ### プロジェクトの作成
 
-`react-native init [プロジェクト名]`
+#### `react-native init [プロジェクト名]`
 
 ```
 $ react-native init birman
 $ cd birman
 ```
- Podインストール
+#### Podインストール
 
 ```
 $ cd ios && pod install && cd ../
 ```
 
-iPhoneシュミレータ起動
-welcomeページが立ち上がる
+#### iPhoneシュミレータ起動
 
 ```
 $ react-native run-ios
 ```
+
+welcomeページが立ち上がる
 
 ### パッケージマネージャをnpmにする
 
 [この手順の差分](https://github.com/ryunosukemaeda0922/birman/pull/2)
 
 yarnのままでも問題はない、個人的な好み
-`yarn.lock`と`node_modules`を削除し`npm install`
+
+#### `yarn.lock`と`node_modules`を削除し`npm install`
+
 `npm install`は`npm i`に省略可能。
 
 ```
@@ -97,6 +100,8 @@ invert selection)
 ❯ y
 ```
 
+#### VSCodeの設定
+
 VSCodeに[ESlint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)の拡張機能を追加
 
 VSCode上でエラーメッセージを表示してくれます
@@ -111,6 +116,35 @@ VSCode上でエラーメッセージを表示してくれます
 $ npm i --save-dev  prettier-eslint prettier-eslint-cli eslint-plugin-jest
 ```
 
+#### VSCodeの設定
+
 [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)の拡張機能を追加
 
 VSCodeの設定で`Format On Save`をにチェックをすると、ファイル保存時に自動で整形してくれる
+
+### Flow
+
+[この手順の差分](https://github.com/ryunosukemaeda0922/birman/pull/5)
+
+JavaScriptの形チェックを行える(参考[@babel/preset-flow](https://babeljs.io/docs/en/babel-preset-flow))
+
+```
+[AwesomeProject/.flowconfig] Connection to flow server got closed. See the output for more information.
+```
+vscodeでこのエラーが出てたらこの項目で解決する
+
+#### .flowconfigの修正
+
+`react-native 0.61.2`なら`0.105.0`が指定されていると思う
+
+```terminal
+$ npm install --save-dev flow-bin@0.105.2 babel-preset-flow
+```
+
+node_modulesをflow対象外にする
+`.flowconfig`の[ignore]の下に追記
+
+```javascript
+./node_modules/.
+```
+[version]を`^0.105.2`に変更(flow-binとversionを合わせる)
