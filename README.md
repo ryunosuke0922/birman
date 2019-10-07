@@ -29,22 +29,20 @@
 $ react-native init birman
 $ cd birman
 ```
-
-### Podインストール
+ Podインストール
 
 ```
 $ cd ios && pod install && cd ../
 ```
 
-### iPhoneシュミレータ起動
-
+iPhoneシュミレータ起動
 welcomeページが立ち上がる
 
 ```
 $ react-native run-ios
 ```
 
-## パッケージマネージャをnpmにする
+### パッケージマネージャをnpmにする
 
 [この手順の差分](https://github.com/ryunosukemaeda0922/birman/pull/2)
 
@@ -58,10 +56,9 @@ $ rm yarn.lock && rm -rf node_modules && npm i
 
 ### ESLint
 
-JavaScript のための静的検証ツールを追加
+[この手順の差分](https://github.com/ryunosukemaeda0922/birman/pull/3)
 
-参考
-[ESLint 最初の一歩](https://qiita.com/mysticatea/items/f523dab04a25f617c87d)
+JavaScript のための静的検証ツールを追加(参考[ESLint 最初の一歩](https://qiita.com/mysticatea/items/f523dab04a25f617c87d))
 
 ```
 $ npm install --save-dev eslint@5.16.0
@@ -100,6 +97,20 @@ invert selection)
 ❯ y
 ```
 
-VSCodeに[ESlint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)を追加
+VSCodeに[ESlint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)の拡張機能を追加
 
 VSCode上でエラーメッセージを表示してくれます
+
+### Prettier
+
+[この手順の差分](https://github.com/ryunosukemaeda0922/birman/pull/4)
+
+コードフォーマッタ(参考[ESLint 最初の一歩](https://qiita.com/mysticatea/items/f523dab04a25f617c87d))
+
+```
+$ npm i --save-dev  prettier-eslint prettier-eslint-cli eslint-plugin-jest
+```
+
+[Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)の拡張機能を追加
+
+VSCodeの設定で`Format On Save`をにチェックをすると、ファイル保存時に自動で整形してくれる

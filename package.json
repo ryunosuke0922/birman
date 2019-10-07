@@ -18,9 +18,12 @@
     "@react-native-community/eslint-config": "^0.0.3",
     "babel-jest": "^24.1.0",
     "eslint": "^5.16.0",
+    "eslint-plugin-jest": "^22.17.0",
     "eslint-plugin-react": "^7.16.0",
     "jest": "^24.1.0",
     "metro-react-native-babel-preset": "^0.51.1",
+    "prettier-eslint": "^9.0.0",
+    "prettier-eslint-cli": "^5.0.0",
     "react-test-renderer": "16.8.1"
   },
   "jest": {
