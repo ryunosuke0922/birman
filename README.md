@@ -17,6 +17,8 @@
 
 ## プロジェク構築
 
+[この手順の差分](https://github.com/ryunosukemaeda0922/birman/pull/1)
+
 ### プロジェクトの作成
 
 `react-native init [プロジェクト名]`
@@ -40,11 +42,17 @@ welcomeページが立ち上がる
 $ react-native run-ios
 ```
 
-### パッケージマネージャをnpmにする
+## パッケージマネージャをnpmにする
 
-yarnのままでも問題はない
-個人的な好み
+[この手順の差分](https://github.com/ryunosukemaeda0922/birman/pull/2)
 
+yarnのままでも問題はない、個人的な好み
+`yarn.lock`と`node_modules`を削除し`npm install`
+`npm install`は`npm i`に省略可能。
+
+```
+$ rm yarn.lock && rm -rf node_modules && npm i
+```
 
 
 ### ESLint
