@@ -148,3 +148,21 @@ node_modulesをflow対象外にする
 ./node_modules/.
 ```
 [version]を`^0.105.2`に変更(flow-binとversionを合わせる)
+
+#### scriptsに追記
+
+[この手順の差分](https://github.com/ryunosukemaeda0922/birman/pull/5)
+
+package.jsonのscriptsに`lint`、`prettier`、`flow`、`flow-stop"`、追記
+
+```json
+"scripts": {
+"start": "react-native start",
+"test": "jest",
+"lint": "eslint ./src",
+"prettier": "eslint ./src --fix",
+"flow": "flow",
+"flow-stop": "flow stop"
+},
+```
+
