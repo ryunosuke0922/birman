@@ -44,6 +44,8 @@ $ react-native run-ios
 
 ## パッケージマネージャをnpmにする
 
+[この手順の差分](https://github.com/ryunosukemaeda0922/birman/pull/2)
+
 yarnのままでも問題はない、個人的な好み
 `yarn.lock`と`node_modules`を削除し`npm install`
 `npm install`は`npm i`に省略可能。
